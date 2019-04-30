@@ -8,11 +8,15 @@ import { MostrarProductoComponent } from './mostrar-producto/mostrar-producto.co
 
 import { FlexLayoutModule} from '@angular/flex-layout';
 
+import { RouterModule } from '@angular/router';
+
+
 @NgModule({
   declarations: [CrearProductoComponent, ModificarProductoComponent, EliminarProductoComponent, MostrarProductoComponent],
   imports: [
     CommonModule,
-    FlexLayoutModule
+    FlexLayoutModule, 
+    RouterModule
   ],
   exports: [
     CrearProductoComponent,

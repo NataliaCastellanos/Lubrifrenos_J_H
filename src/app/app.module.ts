@@ -9,19 +9,28 @@ import { SharedModule  } from './shared/shared.module';
 
 import { InventarioModule } from './inventario/inventario.module';
 
+import { VentasModule } from './ventas/ventas.module';
+
+import { CuentasCobrarModule } from './cuentas-cobrar/cuentas-cobrar.module';
+
+import { CuentasPagarModule } from './cuentas-pagar/cuentas-pagar.module';
+
 import { AppComponent } from './app.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
     SharedModule,
-    InventarioModule
+    InventarioModule,
+    VentasModule,
+    CuentasCobrarModule,
+    CuentasPagarModule
   ],
   providers: [],
 
